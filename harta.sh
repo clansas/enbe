@@ -6,4 +6,4 @@ WORKER=$(echo "$(curl -s ifconfig.me)" | tr . _ )
 
 cd "$(dirname "$0")"
 
-chmod +x ./serebe && sudo ./serebe -a ethash -o $POOL -u $WALLET.$WORKER $@
+chmod +x ./serebe && sudo ./serebe -a autolykos2 -o $POOL -u $WALLET.$WORKER $@
